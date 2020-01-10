@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "module": "esnext",
+    "target": "esnext", //编译目标平台
+    "lib": ["esnext", "dom"],
+    "sourceMap": true, //把 ts 文件编译成 js 文件的时候，同时生成对应的 map 文件
+    "baseUrl": ".",
+    "removeComments": true, //编译 js 的时候，删除掉注释
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true, // 允许从模块进行默认导入而没有默认导出。这不影响代码发出，仅影响类型检查。
+    "moduleResolution": "node", // 模块的解析
+    "forceConsistentCasingInFileNames": true, // 禁止对同一文件使用大小写不一致的引用
+    "noImplicitReturns": true, // 当函数中的所有代码路径均未返回值时，报告错误。
+    "suppressImplicitAnyIndexErrors": true, // 禁止为缺少索引签名的对象建立索引的noImplicitAny错误。
+    "noUnusedLocals": true, // 报告未使用的本地错误。需要TypeScript 2.0或更高版本
+    "allowJs": true, // 允许编译javascript文件
+    "skipLibCheck": true, // 跳过声明文件的类型检查。需要TypeScript 2.0或更高版本
+    "experimentalDecorators": true, // 启用实验性的ES装饰器
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
+}
