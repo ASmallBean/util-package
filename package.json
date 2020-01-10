@@ -1,0 +1,16 @@
+{
+  "name": "util-package",
+  "version": "0.1.1",
+  "description": "common js code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "git repository":"",
+  "keywords": [
+    "util",
+    "tools"
+  ],
+  "author": "SmallBean",
+  "license": "ISC"
+}
