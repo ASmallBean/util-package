@@ -3,9 +3,11 @@ module.exports = {
   rules: {
     'no-plusplus': 0,
     'jsx-a11y/media-has-caption': 0,
+    'template-curly-spacing': 0,
   },
   globals: {
     API_ENV: true,
     page: true,
+    window: true,
   },
 };
